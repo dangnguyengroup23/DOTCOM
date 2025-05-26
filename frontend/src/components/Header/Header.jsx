@@ -1,16 +1,23 @@
-import React from 'react'
-import './Header.css'
+import React from "react";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <div className='header'>
-        <div className="header-contents">
-            <h2>Order your favorite food here</h2>
-            <p>Choose from a diverse menu featuring a delactable array of dishes crafted with the finest ingredients and satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
-            <a href="#explore-menu"><button className='buttonwl'>View Menu</button></a>
-        </div>
+    <div className="header">
+      <div className="header-contents">
+        <h2>Order your favorites now and satisfy your cravings!</h2>
+        <p>
+          Step into the heart of Vietnamese cuisine with a menu full of
+          mouthwatering flavors — from sizzling street bites to hearty
+          home-style dishes. Made with fresh, local ingredients and bursting
+          with tradition, every meal is a journey worth savoring.
+        </p>
+        <a href="#explore-menu">
+          <button className="buttonwl">View Menu</button>
+        </a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

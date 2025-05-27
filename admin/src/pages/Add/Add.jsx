@@ -10,7 +10,7 @@ const Add = ({ url }) => {
     name: "",
     description: "",
     price: "",
-    category: "Salad",
+    category: "Soup & Noodle Soups",
   });
 
   const onChangeHandler = (event) => {
@@ -33,7 +33,7 @@ const Add = ({ url }) => {
         name: "",
         description: "",
         price: "",
-        category: "Salad",
+        category: "Soup & Noodle Soups",
       });
       setImage(false);
       toast.success(response.data.message);
@@ -91,14 +91,14 @@ const Add = ({ url }) => {
               onChange={onChangeHandler}
               name="category"
             >
-              <option value="Salad">Soup & Noodle Soups</option>
-              <option value="Rolls">Dry Dishes / Rice & Noodles </option>
-              <option value="Deserts">Grilled Dishes</option>
-              <option value="Sandwich">Fried Dishes</option>
-              <option value="Cake">Salads & Mixed Dishes</option>
-              <option value="Pure Veg">Soups & Broths</option>
-              <option value="Pasta">Snacks & Street Food</option>
-              <option value="Noodles">After-meal Delights</option>
+              <option value="Soup & Noodle Soups">Soup & Noodle Soups</option>
+              <option value="RoDry Dishes / Rice & Noodleslls">Dry Dishes / Rice & Noodles </option>
+              <option value="DeseGrilled Dishesrts">Grilled Dishes</option>
+              <option value="Fried Dishes">Fried Dishes</option>
+              <option value="Salads & Mixed Dishes">Salads & Mixed Dishes</option>
+              <option value="Soups & Broths">Soups & Broths</option>
+              <option value="Snacks & Street Food">Snacks & Street Food</option>
+              <option value="After-meal Delights">After-meal Delights</option>
             </select>
           </div>
           <div className="add-price flex-col">

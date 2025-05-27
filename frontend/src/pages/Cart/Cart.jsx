@@ -30,9 +30,9 @@ const Cart = () => {
                 <div className='cart-items-title cart-items-item'>
                   <img src={url+"/images/"+item.image} alt="" />
                   <p>{item.name}</p>
-                  <p>${item.price}</p>
+                  <p>{item.price}.000VND</p>
                   <p>{cartItems[item._id]}</p>
-                  <p>${item.price * cartItems[item._id]}</p>
+                  <p>{item.price * cartItems[item._id]}.000VND</p>
                   <p onClick={()=>removeFromCart(item._id)} className='cross'>x</p>
                 </div>
                 <hr />
@@ -47,17 +47,17 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
                 <p>Subtotal</p>
-                <p>${getTotalCartAmount()}</p>
+                <p>{getTotalCartAmount()}.000VND</p>
             </div>
             <hr/>
             <div className="cart-total-details">
                 <p>Delivery Fee</p>
-                <p>${getTotalCartAmount()===0?0:2}</p>
+                <p>{getTotalCartAmount()===0?0:2}.000VND</p>
             </div>
             <hr/>
             <div className="cart-total-details">
                 <b>Total</b>
-                <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+                <b>{getTotalCartAmount()===0?0:getTotalCartAmount()+2}.000VND</b>
             </div>
           </div>
           <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>

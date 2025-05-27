@@ -92,8 +92,8 @@ const Add = ({ url }) => {
               name="category"
             >
               <option value="Soup & Noodle Soups">Soup & Noodle Soups</option>
-              <option value="RoDry Dishes / Rice & Noodleslls">Dry Dishes / Rice & Noodles </option>
-              <option value="DeseGrilled Dishesrts">Grilled Dishes</option>
+              <option value="Dry Dishes / Rice & Noodles">Dry Dishes / Rice & Noodles </option>
+              <option value="Grilled Dishes">Grilled Dishes</option>
               <option value="Fried Dishes">Fried Dishes</option>
               <option value="Salads & Mixed Dishes">Salads & Mixed Dishes</option>
               <option value="Soups & Broths">Soups & Broths</option>
@@ -109,7 +109,7 @@ const Add = ({ url }) => {
               value={data.price}
               type="Number"
               name="price"
-              placeholder="$20"
+              placeholder="20.000VND"
             />
           </div>
         </div>
